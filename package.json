@@ -11,7 +11,6 @@
     "example-web-useSubcribeExample": "parcel ./examples/useSubcribeExample/index.html",
     "example-server": "node ./examples/server.js"
   },
-  "type": "typescript",
   "keywords": [
     "react",
     "hook",
@@ -22,7 +21,7 @@
   "types": "./dist/index.d.ts",
   "module": "./dist/index.js",
   "author": "catpotola",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.2.13",
     "@types/react-dom": "^18.2.6",
