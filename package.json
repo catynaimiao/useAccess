@@ -1,19 +1,26 @@
 {
-  "name": "access",
+  "name": "useAccess",
   "version": "0.0.1",
-  "description": "a react hook for managing access.",
+  "description": "a react hook and component for managing access.",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
-    "server": "node ./dev-server/dev-server.js"
+    "clear": "rm -fr dist",
+    "build": "rm -fr dist&&parcel build",
+    "check":"tsc --noEmit",
+    "dev-server": "node ./dev-server/dev-server.js",
+    "dev-web": "parcel ./dev-web/index.html",
+    "example-web-useSubcribeExample": "parcel ./examples/useSubcribeExample/index.html",
+    "example-server": "node ./examples/server.js"
   },
-  "source": "./web-server/index.html",
+  "type": "typescript",
   "keywords": [
     "react",
     "hook",
     "javascript",
     "typescript"
   ],
+  "source": "index.ts",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
   "author": "catpotola",
   "license": "ISC",
   "devDependencies": {
