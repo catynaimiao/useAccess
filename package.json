@@ -1,6 +1,6 @@
 {
   "name": "use-access",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a react hook and component for managing access.",
   "scripts": {
     "clear": "rm -fr build",
@@ -11,7 +11,7 @@
     "publish": "npm publish --access public",
     "lint": "eslint --ext .ts,.tsx ./src",
     "lint-examples": "eslint --ext .ts,.tsx ./examples",
-    "release": "standard-version",
+    "release": "standard-version&&git add changelog.md",
     "dev-server": "node ./dev-server/dev-server.js",
     "dev-web": "parcel ./dev-web/index.html",
     "example-web-useSubcribeExample": "parcel ./examples/useSubcribeExample/index.html",
