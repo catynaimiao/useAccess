@@ -15,7 +15,7 @@ const useAccess = (selector: CallableFunction = undefined) => {
         "is there any trouble with your AccessProvider, it must parse a object to value."
       );
     }
-    let _access = { ...access };
+    const _access = { ...access };
     return selector(_access);
   }
 

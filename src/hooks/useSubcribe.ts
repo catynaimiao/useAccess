@@ -29,12 +29,12 @@ const deepEqual = (p: any, q: any): boolean => {
   }
   if (_type === "object") {
     // compare twice as logical set.
-    for (let k in p) {
+    for (const k in p) {
       if (!deepEqual(p[k], q[k])) {
         return false;
       }
     }
-    for (let k in q) {
+    for (const k in q) {
       if (!deepEqual(q[k], p[k])) {
         return false;
       }
